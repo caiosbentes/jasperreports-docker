@@ -29,12 +29,8 @@ RUN wget https://master.dl.sourceforge.net/project/jr-community-installers/Serve
 # Copy configuration files
 COPY ./default_master.properties /opt/jasperreports/jasperreports-server-cp-${JASPERREPORTS_VERSION}-bin/buildomatic/default_master.properties
 
-RUN cd /opt/jasperreports/jasperreports-server-cp-${JASPERREPORTS_VERSION}-bin/buildomatic && \
-    find . -name "*.sh" -type f -exec chmod +x {} \; && \
-    cd bin && \
-    find . -name "*.sh" -type f -exec chmod +x {} \; && \
-    cd .. && \
-    chmod -R 755 bin
+# Fix permissions
+RUN chmod +x /opt/jasperreports/jasperreports-server-cp-${JASPERREPORTS_VERSION}-bin/buildomatic/*.sh
 
 # Expose ports
 EXPOSE 8080

@@ -7,7 +7,7 @@ cd /opt/jasperreports/jasperreports-server-cp-${JASPERREPORTS_VERSION}-bin/build
 
 # Ensure all scripts are executable
 echo "Setting up permissions..."
-chmod -R +x /opt/jasperreports/
+chmod -R +x /opt/jasperreports/jasperreports-server-cp-${JASPERREPORTS_VERSION}-bin/
 
 
 # Wait for PostgreSQL to be ready
