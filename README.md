@@ -21,8 +21,9 @@ Este repositório contém a configuração necessária para executar o JasperRep
 
 ```
 .
-├── Dockerfile
+├── default_master.properties
 ├── docker-compose.yml
+├── Dockerfile
 ├── startup.sh
 └── README.md
 ```
@@ -46,8 +47,8 @@ environment:
 
 1. Clone o repositório:
 ```bash
-git clone <url-do-repositorio>
-cd <nome-do-repositorio>
+git clone https://github.com/caiosbentes/jasperreports-docker.git
+cd jasperreports-docker
 ```
 
 2. Inicie os containers:
