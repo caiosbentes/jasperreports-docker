@@ -137,12 +137,12 @@ docker-compose logs jasperserver
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença Apache 2. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 📊 Versões
 
-- JasperReports Server: 8.1.0
-- Tomcat: 9.0.73
+- JasperReports Server: 7.8.0
+- Tomcat: 9.0.68
 - PostgreSQL: 13
 
 ## 🤝 Contribuindo
